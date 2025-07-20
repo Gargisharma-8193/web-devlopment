@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        background-color: beige;
+        border: 2px solid black;
+         margin: 2px;
+        padding: 2px;
+        display: flex;
+      /* flex-wrap:wrap;*/
+       height: 300px;
+       justify-content:start;
+       align-items: start;
+       align-content:center;
+
+        
+        /*flex-direction: column;*/
+       /* flex-direction: column-reverse;*/
+       /*flex-direction: row-reverses;*/
+       flex-direction: row;
+    } 
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
+    }
+    #box1{
+        background-color: aqua;
+        order: 500;
+        /*flex-shrink: 4;*/
+        /*flex-grow: 5;*/
+    }
+     #box2{
+        background-color: rgb(24, 206, 57);
+        /*flex-grow: 1;*/
+        align-self: flex-end;
+    }
+     #box3{
+        background-color: rgb(14, 48, 203);
+        /*flex-grow: 1;*/
+    }
+     #box4{
+        background-color: rgb(200, 24, 165);
+        /*flex-grow: 1;*/
+        /*flex-basis: 400px;*/
+        order: -1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX 1</div>
+        <div class="box"  id="box2">BOX 2</div>
+        <div class="box"  id="box3"> BOX</div>
+        <div class="box"  id="box4">BOX 4</div>
+    </div>
+</body>
+</html>

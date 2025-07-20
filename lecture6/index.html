@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid red;
+            width: 25%;/*% depend on parent width,height*/
+        }
+        .parent{
+            border: 1px solid black;
+            background-color: beige;
+        }
+        .child{
+            border: 1px solid black;
+            background-color: aqua;
+            width:50%; 
+        }
+        .container{
+            border: 1px solid green;
+            background-color: rgb(235, 14, 55);
+            height:50vh;/*vh is total hieght 100vh*/
+            width:50vw;/*vw is total width 100vw*/
+        }
+        .box1{
+            border: 1px solid black;
+            font-size: 100px;/*1px is 1/96 of inch*/
+        }
+        .container1{
+            font-size: 10px;
+            padding: 10px;
+        }
+        .box2{
+            font-size: 10em;/* parent font size multiply actual child size is total of em*/
+           /* padding: 10em;*/
+        }
+        .firstpara{
+            border: 3px dotted blue;
+            font-size: 5 rem;/*it depend on root element 10*16:160*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">Welcome to codehelp</div>
+    <br>
+    <div class="parent">
+        <div class="child">CHILD</div>
+    </div>
+    <br>
+    <div class="container">
+        welcome gargi
+    </div>
+    <br>
+    <div class="box1">Love babar</div>
+    <div class="container1">
+        <div class="box2">welcome sakshi </div>
+    </div>
+    <p class="firstpara">Hello jee</p>
+</body>
+
+</html>

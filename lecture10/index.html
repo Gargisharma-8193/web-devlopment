@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .box{
+             background-color:aqua;
+             width: var(--custom-width);
+            border: 2px solid var(--primary-color);
+            height: 400px;
+            /*width: 400px;*/
+            margin: 5px;
+            padding: 5px;
+           /* box-shadow: -10px -60px var(--primary-color);*/  /*custom varry colour*/
+            /*box-shadow: 10px 10px brown;*/
+           /* box-shadow: 10px 15px 5px brown;*/     /*b;ur radius*/
+           /* box-shadow: 10px 15px 5px 20px brown;*/ /*spread radius*/
+           /* box-shadow: inset 10px 15px brown;*/      /*inside*/
+           /*box-shadow: 10px 15px red,15px 8px green;*/    /*multiple shadows*/
+
+        }
+        #head{
+            text-shadow: 2px 3px 2px white;  /*with blur radius*/
+           /*text-shadow: yellow 4px 5px;*/
+           /*text-shadow: 10px 15px;*/ /*by default*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="C:\Users\Radha\OneDrive\Desktop\css\download (4)img.jpg" alt="image">
+            <h2 id="head">welcome to code help</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolore placeat, maxime delectus fugiat quos 
+                quae est eaque, id corrupti nesciunt accusantium, tenetur officiis suscipit pariatur! Ratione error enim velit,
+                 quasi, officia obcaecati libero harum quam, nesciunt aliquam corporis quisquam.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
